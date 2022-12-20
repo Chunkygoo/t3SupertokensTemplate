@@ -8,7 +8,7 @@ import "../styles/globals.css";
 
 if (typeof window !== "undefined") {
   // we only want to call this init function on the frontend, so we check typeof window !== 'undefined'
-  SuperTokensReact.init(frontendConfig);
+  SuperTokensReact.init(frontendConfig());
 }
 
 const MyApp: AppType = ({ Component, pageProps }) => {
